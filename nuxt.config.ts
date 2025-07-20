@@ -9,5 +9,25 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/image'
   ],
-  css: ['~/assets/css/main.css']
+  css: ['~/assets/css/main.css'],
+
+  app: {
+    head: {
+      title: 'Владимир и Виктория',
+      meta: [
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { charset: 'utf-8' }
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ]
+    }
+  }
+
+  // app: {
+  //   baseURL: '/wedding-site/',
+  // },
+  // nitro: {
+  //   preset: 'static',
+  // }
 })
