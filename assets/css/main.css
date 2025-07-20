@@ -8,3 +8,7 @@
 :root {
     --ui-container: var(--container-xl);
 }
+
+button {
+    cursor: pointer;
+}

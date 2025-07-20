@@ -3,24 +3,24 @@
     <h2 class="text-2xl font-semibold text-center">Анкета, чтобы всё прошло красиво</h2>
 
     <UForm :validate="validate" :state="form" class="space-y-4" @submit="submitForm">
-      <UFormField  label="Имя" name="firstName" required>
-        <UInput v-model="form.firstName" class="w-full" placeholder="Ваше имя" />
+      <UFormField  label="Имя" name="firstName" required size="xl" >
+        <UInput v-model="form.firstName" class="w-full" placeholder="Ваше имя" size="xl" />
       </UFormField >
 
-      <UFormField  label="Фамилия" name="lastName" required>
-        <UInput v-model="form.lastName" class="w-full" placeholder="Ваша фамилия" />
+      <UFormField  label="Фамилия" name="lastName" required size="xl" >
+        <UInput v-model="form.lastName" class="w-full" placeholder="Ваша фамилия" size="xl" />
       </UFormField >
 
-      <UFormField  label="Сможете ли вы быть с нами в этот день?" name="attendance" required>
-        <URadioGroup v-model="form.attendance" :items="attendanceOptions" />
+      <UFormField  label="Сможете ли вы быть с нами в этот день?" name="attendance" required size="xl" >
+        <URadioGroup v-model="form.attendance" :items="attendanceOptions" size="xl" />
       </UFormField >
 
-      <UFormField  label="Нужна ли вам помощь с трансфером?" name="transferHelp" required>
-        <URadioGroup v-model="form.transferHelp" :items="transferOptions" />
+      <UFormField  label="Нужна ли вам помощь с трансфером?" name="transferHelp" required size="xl" >
+        <URadioGroup v-model="form.transferHelp" :items="transferOptions" size="xl" />
       </UFormField >
 
-      <UFormField  label="Уточните предпочтения по напиткам" name="drinks" required>
-        <UCheckboxGroup v-model="form.drinks" :items="drinkOptions" />
+      <UFormField  label="Уточните предпочтения по напиткам" name="drinks" required size="xl" >
+        <UCheckboxGroup v-model="form.drinks" :items="drinkOptions" size="xl" />
       </UFormField >
 
       <UButton type="submit" color="primary" :loading="loading" size="xl" class="w-full justify-center">Отправить</UButton>
