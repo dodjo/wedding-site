@@ -1,7 +1,6 @@
 <template>
-<div class="w-full mx-auto">
+<div class="w-full mx-auto max-w-[480px]">
  <Main/>
- <Place/>
  <Place/>
 </div>
 </template>
