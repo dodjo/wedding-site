@@ -5,6 +5,13 @@
     --container-8xl: 90rem;
 }
 
+@font-face {
+    font-family: 'Kosmos';
+    src: url('@/assets/fonts/Kosmos.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --ui-container: var(--container-xl);
 }
