@@ -1,18 +1,27 @@
 <template>
-<div class="page w-full mx-auto max-w-[480px]">
+<div class="page w-full mx-auto max-w-[450px] overflow-hidden">
  <Main/>
  <Place/>
+ <Dress/>
+ <Present/>
+ <Flowers/>
+  <Form/>
+ <Suppoprt/>
 </div>
 </template>
 
 <script setup lang="ts">
-import Main from "~/components/main/main.vue";
-import Place from "~/components/place/place.vue";
+import Main from "~/components/main.vue";
+import Place from "~/components/place.vue";
+import Dress from "~/components/dress.vue";
+import Present from "~/components/present.vue";
+import Suppoprt from "~/components/suppoprt.vue";
+import Form from "~/components/form.vue";
 </script>
 
 
-<style scoped lang="scss">
-.page {
+<style lang="scss">
+body {
   position: relative;
   &::before {
     content: "";

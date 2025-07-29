@@ -12,8 +12,21 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Consolas';
+    src: url('@/assets/fonts/consolas.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-size: clamp(12px, 1vw + 1vh, 18px);
+}
+
 :root {
+    --ui-primary: #c7beb6;
     --ui-container: var(--container-xl);
+    font-family: 'Consolas', sans-serif;
 }
 
 button {
