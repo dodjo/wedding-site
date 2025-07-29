@@ -20,7 +20,7 @@
 }
 
 html {
-    font-size: clamp(12px, 1vw + 1vh, 18px);
+    font-size: clamp(12px, 1vw + 1vh, 14px);
 }
 
 :root {

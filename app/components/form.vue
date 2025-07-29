@@ -39,7 +39,10 @@
       <UButton type="submit" color="primary" :loading="loading" size="xl" class="w-full justify-center text-[1.5rem]/[1.2] text-black">Отправить</UButton>
     </UForm>
 
-    <UAlert v-if="status" :color="statusColor" :title="status" />
+    <div class="flex" v-if="status">
+      <NuxtImg src="/pic/dancing-white-cat-dance.gif"/>
+      <UAlert :color="statusColor" :title="status"/>
+    </div>
   </div>
 </div>
 </template>
@@ -86,9 +89,9 @@ const validate = (state: any): FormError[] => {
 }
 
 const submitForm = async () => {
-  console.log(form.value)
   try {
     loading.value = true
+    status.value = 'Туц-туц, лапка вверх — сохраняем ответ'
     const res = await fetch('/api/send-form-to-sheets', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -96,7 +99,7 @@ const submitForm = async () => {
     })
     const data = await res.json()
     if (data.success) {
-      status.value = 'Спасибо! Ваш ответ записан.'
+      status.value = 'Туц-туц, лапка вверх — сохраняем ответ'
       statusColor.value = 'green'
       form.value = {
         firstName: null,
@@ -106,11 +109,11 @@ const submitForm = async () => {
         drinks: []
       }
     } else {
-      status.value = 'Ошибка при отправке.'
+      status.value = 'Мурр, что-то пошло не так!'
       statusColor.value = 'red'
     }
   } catch (error) {
-    status.value = 'Ошибка сети.'
+    status.value = 'Мурр, что-то пошло не так!'
     statusColor.value = 'red'
   }
   loading.value = false

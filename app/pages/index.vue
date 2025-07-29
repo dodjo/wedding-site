@@ -1,5 +1,5 @@
 <template>
-<div class="page w-full mx-auto max-w-[450px] overflow-hidden">
+<div class="page block sm:hidden w-full mx-auto max-w-[450px] overflow-hidden">
  <Main/>
  <Place/>
  <Dress/>
@@ -7,6 +7,12 @@
  <Flowers/>
   <Form/>
  <Suppoprt/>
+</div>
+<div class="page hidden sm:flex flex-col gap-2 items-center justify-center  h-[100svh] w-full mx-auto max-w-[450px]">
+  <NuxtImg src="/pic/qr.svg"  class="w-[80%] block"/>
+  <p>
+    Заходи c телефона 😉
+  </p>
 </div>
 </template>
 
@@ -23,6 +29,7 @@ import Form from "~/components/form.vue";
 <style lang="scss">
 body {
   position: relative;
+  min-height: 100svh;
   &::before {
     content: "";
     position: absolute;
