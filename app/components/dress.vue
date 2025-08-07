@@ -1,5 +1,5 @@
 <template>
-<div class="relative">
+<div class="relative -mt-10">
   <NuxtImg src="/pic/dress/dress.png" class=""/>
   <div class="relative -mt-30 px-15 text-center translate-x-[10px]">
     <h2 class="mb-10 text-4xl text-black font-semibold font-[kosmos]">

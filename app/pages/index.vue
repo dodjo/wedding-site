@@ -2,11 +2,13 @@
 <div class="page block sm:hidden w-full mx-auto max-w-[450px] overflow-hidden">
  <Main/>
  <Place/>
+  <Plan/>
  <Dress/>
  <Present/>
  <Flowers/>
   <Form/>
  <Suppoprt/>
+  <Final/>
 </div>
 <div class="page hidden sm:flex flex-col gap-2 items-center justify-center  h-[100svh] w-full mx-auto max-w-[450px]">
   <NuxtImg src="/pic/qr.svg"  class="w-[80%] block"/>
