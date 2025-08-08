@@ -19,7 +19,7 @@
   <div class="relative">
     <p class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-10 w-[75%] text-[1.5rem]/[1.2] text-center font-[consolas]">
       И обязательно вступай в
-      <a href="#" target="_blank" class="underline text-blue-900">свадебный чат</a>
+      <a href="https://t.me/+pkc6q7MUbtg3Yjcy" target="_blank" class="underline text-blue-900">свадебный чат</a>
       — там расписание, напоминалки
       и терапевтические мемы.
     </p>

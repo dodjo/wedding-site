@@ -83,8 +83,8 @@ const validate = (state: any): FormError[] => {
   if (!form.value.firstName) errors.push({ name: 'firstName', message: 'обязательное поле' })
   if (!form.value.lastName) errors.push({ name: 'lastName', message: 'обязательное поле' })
   if (!form.value.attendance) errors.push({ name: 'attendance', message: 'обязательное поле' })
-  if (!form.value.transferHelp) errors.push({ name: 'transferHelp', message: 'обязательное поле' })
-  if (!form.value.drinks.length) errors.push({ name: 'drinks', message: 'обязательное поле' })
+  if (!form.value.transferHelp && form.value.attendance === 'да') errors.push({ name: 'transferHelp', message: 'обязательное поле' })
+  if (!form.value.drinks.length && form.value.attendance === 'да') errors.push({ name: 'drinks', message: 'обязательное поле' })
   return errors
 }
 

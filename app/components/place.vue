@@ -4,7 +4,7 @@
   <NuxtImg src="/pic/place/salvette.png" class="relative w-[59%] flex ml-auto translate-y-[-150px] z-10"/>
   <div class="translate-y-[-250px]">
     <NuxtImg src="/pic/place/papper.png"/>
-    <p class="-mt-30 translate-x-[-30px] text-center text-4xl transform rotate-[-8deg] text-black font-semibold font-[kosmos]">
+    <p class="-mt-35 ml-2 text-center text-4xl transform rotate-[-8deg] text-black font-semibold font-[kosmos]">
       Где отмечаем?
     </p>
   </div>
