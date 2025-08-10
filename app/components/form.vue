@@ -62,8 +62,8 @@ const status = ref('')
 const statusColor = ref('gray')
 
 const attendanceOptions = [
-  { label: 'Да, конечно!', value: 'да' },
-  { label: 'Увы, не получится :(', value: 'нет' }
+  { label: 'Да, конечно! 🎉', value: 'да' },
+  { label: 'Увы, не получится 🙁', value: 'нет' }
 ]
 
 const transferOptions = [
