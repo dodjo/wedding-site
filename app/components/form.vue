@@ -11,7 +11,7 @@
     <NuxtImg src="/pic/form/bg1.png" class="absolute top-0"/>
     <p class="relative py-20 px-10 z-10 text-[1.2rem]/[1.2] text-center font-[consolas]">
       Пожалуйста, заполните анкету и подтвердите ваше присутствие
-      на нашем празднике до <b>20 августа 2025</b>
+      на нашем празднике до <b>25 августа 2025</b>
     </p>
   </div>
   <div class="max-w-xl mx-auto px-15 pt-5 pb-20 space-y-6">
